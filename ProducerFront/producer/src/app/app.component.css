@@ -1,0 +1,62 @@
+#container {
+    width: 1250px;
+    height: 600px;
+    position: relative;
+    top: 6px;
+    left: 4px;
+    border: 1px solid #ccc;
+  }
+  .tools {
+    width: 1500px;
+    height: 100px;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    background-image: linear-gradient(to right, #09c, rgb(13, 178, 184));
+    float: left;
+    width: 110px;
+    height: 40px;
+    border-radius: 5%;
+    border: 1px solid #0c9;
+    margin: 30px;
+  }
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .add_product {
+    position: relative;
+    top: 30px;
+    margin: 0px;
+  }
+  input {
+    width: 150px;
+    height: 37px;
+    border-radius: 5%;
+    border: 1px solid #0c9;
+    position: relative;
+    top: 28px;
+    margin: 2px;
+  }
+  .result {
+    float: left;
+    height: 60px;
+    text-align: center;
+  }
+  
+  .clearfix {
+    overflow: auto;
+  }
+  .sii {
+    height: 35px;
+  }

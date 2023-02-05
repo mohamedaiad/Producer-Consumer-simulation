@@ -1,0 +1,38 @@
+<div class="program">
+  <div class="tools">
+    <button (click)="rectangle()">Add Q</button>
+    <button (click)="circle()">Add M</button>
+    <button (click)="line()">Line Mode</button>
+    <button (click)="connect()">Run</button>
+    <button (click)="reset()">Reset</button>
+    <button (click)="replay()">Replay</button>
+    <button class="add_product" (click)="addproduct()">Add Product</button>
+    <input type="text" placeholder="Product Name" [(ngModel)]="productname" />
+  </div>
+  <div class="draw d-flex">
+    <div id="container"></div>
+    <div id="child" class="row ms-1 mt-1 d-flex justify-contents-between">
+      <div class="result mx-3 w-25">
+        <h4>INPUT</h4>
+        <div
+          *ngFor="let item of input"
+          class="sii px-3 rounded"
+          [style.background-color]="item.color"
+        >
+          <p>{{ item.name }}</p>
+        </div>
+      </div>
+      <div class="result w-25">
+        <h4>OUTPUT</h4>
+        <div
+          *ngFor="let item of output"
+          class="sii px-3 rounded"
+          [style.background-color]="item.color"
+        >
+          <p>{{ item.name }}</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
